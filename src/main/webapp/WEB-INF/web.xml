@@ -7,6 +7,13 @@
         <param-value>Development</param-value>
     </context-param>
 
+    <!--Configuration JSF pour interpreter les chaines vides comme null-->
+    <context-param>
+        <param-name>javax.faces.INTERPRET_EMPTY_STRING_SUBMITTED_VALUES_AS_NULL</param-name>
+        <param-value>true</param-value>
+    </context-param>
+
+
     <!-- Déclaration du contrôleur central et unique de JSF : la FacesServlet -->
     <!-- Declaration of the central and the unique JSF controller : The FacesServlet -->
     <servlet>
