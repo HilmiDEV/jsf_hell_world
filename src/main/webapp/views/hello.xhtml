@@ -10,9 +10,12 @@
       xmlns:h="http://java.sun.com/jsf/html">
 <h:head>
     <title>JSF 2.X</title>
+    <!--Add CSS to the jsp page-->
+    <h:outputStylesheet library="css" name="app.css"></h:outputStylesheet>
 </h:head>
 <h:body>
     <h1>JSF 2.0 - Hello Page</h1>
+    <h:graphicImage library="img" name="user.png"></h:graphicImage>
     <h:form>
         <span> First Name : </span>
         <h:inputText value="#{personBean.firstName}" />
